@@ -42,7 +42,6 @@ def login():
             return jsonify({"message": "No faces found in the image"}), 404
     else:
         return jsonify({"error": "file not valid"}), 400
-
-
+    
 if __name__ == '__main__':
     app.run(debug=True)
