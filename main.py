@@ -35,10 +35,8 @@ def signUp():
         return jsonify({"error": "No file part"}), 400
 
     file = request.files['img']
-    print(request.form["values"])
     
     informacion = loads(request.form["values"])
-    print(informacion)
 
     name = informacion.get("name")
     idNumber = informacion.get("idNumber")
