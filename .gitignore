@@ -1,6 +1,68 @@
-myvenv/
+# Entornos virtuales (por ejemplo, creado con virtualenv o pipenv)
 venv/
-.vscode/
+env/
 .venv/
-.env
-.idea/
+*.pyc
+*.env
+# Archivos de configuración local
+*.sqlite3
+*.log
+*.pot
+*.pyo
+*.bak
+*.swp
+
+# Archivos CSV
+data/
+
+# Archivos de migraciones de la base de datos
+*/migrations/*.py
+
+# Directorio de archivos estáticos recolectados
+staticfiles/
+
+# Archivos de cache
+__pycache__/
+**/migrations/
+
+# Archivos de configuración específicos del entorno (puedes tener diferentes para desarrollo, producción, etc.)
+backend/.env
+
+# Dependencias de terceros
+/lib/python3.*/site-packages/
+/node_modules/
+/bower_components/
+
+# Directorio de build
+/build/
+/dist/
+
+# Archivo de secretos
+secrets.json
+*.secret_key
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.sublime-workspace
+*.sublime-project
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Windows
+Desktop.ini

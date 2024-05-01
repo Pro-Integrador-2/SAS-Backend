@@ -11,6 +11,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+DB_HOST = os.getenv("DB_HOST")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_NAME = os.getenv("DB_NAME")
+
 app = Flask(__name__)
 CORS(app)
 
@@ -30,10 +35,8 @@ def signUp():
         return jsonify({"error": "No file part"}), 400
 
     file = request.files['img']
-    print(request.form["values"])
     
     informacion = loads(request.form["values"])
-    print(informacion)
 
     name = informacion.get("name")
     idNumber = informacion.get("idNumber")
